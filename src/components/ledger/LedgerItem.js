@@ -25,7 +25,7 @@ function LedgerItem(props) {
     <li
       key={activity_id}
     >
-      <div className="ledger_container">
+      <div className="ledger_container container">
         <div className="ledger_item">
           {formatDateString(date)}
         </div>
@@ -33,6 +33,8 @@ function LedgerItem(props) {
           {type}
         </div>
         <div className="ledger_item">
+          {destination.type}
+          {' '}
           {destination.description}
         </div>
         <div className="ledger_item">
