@@ -1,18 +1,29 @@
 .container {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
+
+.ledger_card {
+  width: 100%;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(42, 8, 235, 0.295);
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
 .homepage-heading {
-    font-size: 2em;
-    font-weight: 300;
-    margin: 1em 0;
-    text-align: center;
+  font-size: 2em;
+  font-weight: 300;
+  margin: 1em 0;
+  text-align: center;
 }
 
 .investing_account {
-    text-align: left;
-    font-size: 30px;
-    margin-bottom: 10px;
+  text-align: left;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .balance {
@@ -20,32 +31,65 @@
   font-size: 30px;
   padding-top: 10px;
   padding-bottom: 30px;
-  padding-left: 0;
-  padding-right: 0;
-  background-color: #cdd8e2;
-  overflow-x: visible;
+  background-color: #e8eff5;
 }
 
-
+.balance_text {
+  margin-top: 0;
+  font-weight: 300;
+  font-size: 20px;
+}
 .ledger_container {
     display: grid;
     grid-template-columns: 10% 20% 50% 10% 10%;
   }
-  
-  .ledger_item {
-    border-bottom: 1px solid #000;
+
+  .ledger_header {
     border-top: 1px solid #000;
-    text-align: center;
-    padding: 10px;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 300;
+  }
+
+  .ledger_item {
+    border-top: 1px solid #000;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 300;
+  }
+  
+  .ledger_item:nth-child(2) {
+    font-weight: 500;
+  }
+  
+  .ledger_header:nth-child(4) {
+    text-align: right;
+  }
+
+  .ledger_header:nth-child(5) {
+    text-align: right;
+  }
+  
+  
+  .ledger_item:nth-child(4) {
+    text-align: right;
+  }
+
+  .ledger_item:nth-child(5) {
+    text-align: right;
   }
   
   .past_transactions {
     text-align: left;
     font-size: 30px;
-    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   ul {
     list-style: none;
     padding-left: 0;
+    margin: 0;
   }
