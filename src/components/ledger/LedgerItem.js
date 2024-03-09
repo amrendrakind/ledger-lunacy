@@ -10,7 +10,7 @@ function LedgerItem(props) {
   function formatDateString(originalDate) {
     const dateObject = new Date(originalDate);
     
-    // Extract date components
+    // Extract date components year month and day
     const year = dateObject.getFullYear().toString().slice(-2);
     const month = (dateObject.getMonth() + 1).toString().padStart(2, '0');
     const day = dateObject.getDate().toString().padStart(2, '0');
@@ -19,6 +19,13 @@ function LedgerItem(props) {
     const formattedDate = `${month}/${day}/${year}`;
   
     return formattedDate;
+  }
+
+  function toSentenceCase(str) {
+    const words = str.toLowerCase().split(/[_\s]+/); // Convert to lowercase and split into words if space or _
+    // Capitalize the first letter of each word and join back
+    const sentenceCaseWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+    return sentenceCaseWords;
   }
 
   return (
@@ -33,7 +40,11 @@ function LedgerItem(props) {
           {type}
         </div>
         <div className="ledger_item">
-          {destination.type}
+          {toSentenceCase(destination.type)}
+          {' '}
+          {toSentenceCase(type)}
+          {' '}
+          {amount >= 0 ? 'from' : 'for'}
           {' '}
           {destination.description}
         </div>
