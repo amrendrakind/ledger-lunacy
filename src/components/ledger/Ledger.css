@@ -1,0 +1,51 @@
+.container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.homepage-heading {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.investing_account {
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.balance {
+  text-align: left;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #cdd8e2;
+  overflow-x: visible;
+}
+
+
+.ledger_container {
+    display: grid;
+    grid-template-columns: 10% 20% 50% 10% 10%;
+  }
+  
+  .ledger_item {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .past_transactions {
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
