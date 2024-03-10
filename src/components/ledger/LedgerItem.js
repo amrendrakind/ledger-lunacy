@@ -48,10 +48,12 @@ function LedgerItem(props) {
           {' '}
           {destination.description}
         </div>
-        <div className="ledger_item">
+        <div className={`ledger_item ${amount <= 0 ? 'negative_ledger_balance' : 'positive_ledger_balance'}`}>
+          {'$'}
           {amount}
         </div>
-        <div className="ledger_item">
+        <div className={`ledger_item ${balance <= 0 ? 'negative_ledger_balance' : 'positive_ledger_balance'}`}>
+          {'$'}
           {balance}
         </div>
       </div>
