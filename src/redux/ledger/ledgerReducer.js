@@ -1,4 +1,4 @@
-import { LEDGER_DATA } from '../types';
+import LEDGER_DATA from '../types';
 
 const initialState = [];
 

@@ -45,6 +45,7 @@
   font-weight: 300;
   font-size: 20px;
 }
+
 .ledger_container {
   display: grid;
   grid-template-columns: 10% 20% 50% 10% 10%;
@@ -65,7 +66,7 @@
   padding-bottom: 30px;
   font-weight: 300;
 }
-  
+
 .ledger_item:nth-child(2) {
   font-weight: 400;
 }
@@ -77,7 +78,6 @@
 .ledger_header:nth-child(5) {
   text-align: right;
 }
-
 
 .ledger_item:nth-child(4) {
   text-align: right;

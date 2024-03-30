@@ -1,5 +1,5 @@
 import ledgerList from './ledgerAPI';
-import { LEDGER_DATA } from '../types';
+import LEDGER_DATA from '../types';
 
 export const ledgerLists = () => async (dispatch) => {
   dispatch({
