@@ -23,7 +23,7 @@ Take a look at the [Ledger Lunacy page](https://ledger-lunacy-tnxq.onrender.com/
 
 move into project directory
 
-`cd website/ledger-lunacy/`
+`cd ledger-lunacy`
 
 Install Project dependancies using `NPM`
 
@@ -66,7 +66,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/amrendrakind/ledger-lunacy/issues).
 
 ## Show your support
 
@@ -74,9 +74,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- EquityList team for designing and providing assignmnet.
-- Page designed based on Equity List design.
-- Code snippet support from online resources
+- EquityList team for design and providing assignmnet.
+- Page designed based on EquityList design.
+- Code snippet support from online resources.
 
 ## 📝 License
 
