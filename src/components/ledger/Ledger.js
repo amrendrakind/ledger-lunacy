@@ -15,28 +15,33 @@ const Ledger = () => {
   return (
     <div>
       <div>
-        <h2 className="homepage_heading">Welcome to Your Dashboard</h2>
+        <h2 className="homepage_heading">Welcome to Ledger Dashboard</h2>
       </div>
       <div>
         <div className="investing_account container">
           Investing Account
         </div>
         <div className="balance container">
-          {ledger.length > 0 ? (<p className="ledger_balance">${ledger[0].balance}</p>) : (<p className="ledger_balance">Updating</p> )}
+          {ledger.length > 0 ? (
+            <p className="ledger_balance">
+              $
+              {ledger[0].balance}
+            </p>
+          ) : (<p className="ledger_balance">Updating</p>)}
           <div className="balance_text">BALANCE</div>
         </div>
         <div className="past_transactions container">
           Past Transactions
         </div>
-        <div className="ledger_container container"> 
+        <div className="ledger_container container">
           <div className="ledger_header">Date</div>
           <div className="ledger_header">Transaction</div>
-          <div className="ledger_header"></div>
+          <div className="ledger_header" />
           <div className="ledger_header">Amount</div>
           <div className="ledger_header">Balance</div>
         </div>
         <ul>
-          <div >
+          <div>
             {ledger.map((ledger) => (
               <LedgerItem
                 key={ledger.activity_id}
