@@ -1,6 +1,6 @@
 # Project Name : Ledger Lunacy
 
-> The Ledger Lunacy is about creating a UI for a bank account that investors use to invest in startups. You only have access to an API created by the underlying bank. THis project create by making use of React and Redux.
+> The Ledger Lunacy is about creating a UI for a bank account that investors use to invest in startups. You only have access to an API created by the underlying bank. This project was created by making use of React and Redux.
 
 - Complicated_ledger.json Data has been kept in ledgerAPI.js of src > redux > ledger folder.
 
