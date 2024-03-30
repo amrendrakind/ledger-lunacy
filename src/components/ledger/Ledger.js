@@ -15,7 +15,7 @@ const Ledger = () => {
   return (
     <div>
       <div>
-        <h2 className="homepage_heading">Welcome to Your Dashboard</h2>
+        <h2 className="homepage_heading">Welcome to Ledger Dashboard</h2>
       </div>
       <div>
         <div className="investing_account container">
